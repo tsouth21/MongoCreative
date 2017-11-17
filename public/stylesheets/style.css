@@ -1,0 +1,10 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url('https://s-media-cache-ak0.pinimg.com/originals/c4/cc/0d/c4cc0d9a28ef1bab0784325cffbb840b.jpg');
+  background-color: lightgrey;
+}
+
+a {
+  color: #00B7FF;
+}
