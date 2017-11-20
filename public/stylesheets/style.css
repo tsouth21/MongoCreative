@@ -16,9 +16,20 @@ color:black;
 background-color: darkgrey;
 border: solid black thick;
 }
+.glyphicon {
+  font-size: 30px;
+}
 h2 {
-margin-top:10px;
-margin-left: 20px;
+margin-top:20px;
+text-align:center;
+border-bottom: solid black medium;
+margin-left:30%;
+margin-right:30%;
+padding-bottom:2px;
+}
+h3 {
+font-weight: bold;
+color: rgb(185,9,11);
 }
 img {
 width: 400px;
@@ -30,16 +41,19 @@ div {
 text-align:center;
 }
 form {
-margin-left: 10px;
-margin-bottom:10px;
+margin-bottom:20px;
+text-align:center;
 }
 #wrap {
 text-align:center;
+-webkit-column-count: 2;
+column-count: 2;
 }
 #shows {
 position: inline-block;
-margin-bottom: 15px;
+break-inside: avoid-column;
+margin-bottom: 25px;
 border: dashed darkgrey medium;
-margin-left:30%;
-margin-right:30%;
+margin-left:10%;
+margin-right:10%;
 }

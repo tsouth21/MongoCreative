@@ -31,10 +31,12 @@
 {{test}}
 </div>
 <div id="wrap">
+<h3>Popular Titles:</h3>
+<span class="glyphicon glyphicon-arrow-down"></span>
 <div id="shows" ng-repeat="show in shows | orderBy: '-upvotes'">
 <img ng-src="{{show.url}}" /><br>
 <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(show)"></span>
-{{show.title}} - Show Type: {{show.type}} - upvotes: {{show.upvotes}}
+{{show.title}} &mdash; Show Type: {{show.type}} &mdash; upvotes: {{show.upvotes}}
 </div>
 </div>
 </body>
