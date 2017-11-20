@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
   <title>Mongo Creative</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="http://www.videoconverterfactory.com/glossary/imgs/ts.gif" />
   <link rel='stylesheet' type='text/css' href='stylesheets/style.css'>
+  <script src="javascripts/app.js"></script>
 </head>
-<body>
+
+<body ng-app="show" ng-controller="MainCtrl">
+
+<h1>What to watch on <span id="netflix">NETFLIX</span></h1>
+<h2>Suggest A Show</h2>
+
+<form ng-submit="addShow()">
+<input type="text" placeholder="Title" ng-model="showTitle"></input>
+<input type="text" placeholder="Image URL" ng-model="showImage"></input>
+<select ng-model="showType" placehoder="Show Type">
+	<option value="" disabled selected>Show Type?</option>
+	<option value="TV Show">TV Show</option>
+	<option value="Movie">Movie</option>
+	<option value="Documentary">Documentary</option>
+	<option value="Other">Other</option>
+</select>
+<button type="submit" value="submit">Add A Show</button>
+</form>
+
+<div>
+{{test}}
+</div>
+<div id="wrap">
+<div id="shows" ng-repeat="show in shows | orderBy: '-upvotes'">
+<img ng-src="{{show.url}}" /><br>
+<span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(show)"></span>
+{{show.title}} - Show Type: {{show.type}} - upvotes: {{show.upvotes}}
+</div>
+</div>
 </body>
 </html>

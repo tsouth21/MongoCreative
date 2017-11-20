@@ -1,10 +1,45 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: url('https://s-media-cache-ak0.pinimg.com/originals/c4/cc/0d/c4cc0d9a28ef1bab0784325cffbb840b.jpg');
   background-color: lightgrey;
 }
-
-a {
-  color: #00B7FF;
+#netflix {
+color: rgb(185,9,11);
+font-family: "Arial Bold";
+font-size: 40px;
+font-variant: normal;
+font-weight: 500;
+}
+h1 {
+text-align:center;
+color:black;
+background-color: darkgrey;
+border: solid black thick;
+}
+h2 {
+margin-top:10px;
+margin-left: 20px;
+}
+img {
+width: 400px;
+border: solid black thin;
+border-radius:5px;
+margin: 15px;
+}
+div {
+text-align:center;
+}
+form {
+margin-left: 10px;
+margin-bottom:10px;
+}
+#wrap {
+text-align:center;
+}
+#shows {
+position: inline-block;
+margin-bottom: 15px;
+border: dashed darkgrey medium;
+margin-left:30%;
+margin-right:30%;
 }
